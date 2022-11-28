@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="galeria/favicon.ico" type="image/x-icon">
+    <title>Fale Conosco</title>
+    <link rel="stylesheet" href="css/formulario.css" midia="screen">
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav class="menu">
+            <ul>
+            <li><a href="index.html" rel="prev">Página Inicial</a></li>
+            <li><a href="galeria.html">Os Planetas de Nosso Sistema</a>
+                <ul>
+                    <li><a href="mercurio.html">Mercúrio</a></li>
+                    <li><a href="venus.html">Vênus</a></li>
+                    <li><a href="terra.html">Terra</a></li>
+                    <li><a href="marte.html">Marte</a></li>
+                    <li><a href="jupiter.html">Júpiter</a></li>
+                    <li><a href="saturno.html">Saturno</a></li>
+                    <li><a href="urano.html">Urano</a></li>
+                    <li><a href="netuno.html">Netuno</a></li>
+                    <li><a href="planeta9.html">Planeta 9</a></li>
+                </ul>
+            </li>
+            <li><a href="solelua.html">Sol e Lua</a></li>
+            <li><a href="plutao.html">Plutão</a></li>
+            <li><a href="curiosidadesdosplanetas.html">Curiosidades dos Planetas</a></li>
+            <li><a href="fale_conosco.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+
+        <br>
+        <main>
+        <h1>Converse com a Gente!!</h1>
+        <br>
+        <h2>Em que podemos te ajudar?</h2>
+        <br>
+        <p>Aqui é um espaço para você interagir com a gente.
+           Esse espaço é pra você nos dar sua opinião, sugestão, elogios ou aquilo que tiver interesse em compartilhar.
+        </p>
+        <br>
+        <p>Vamos interagir, preecha seus dados para nos conhecer.</p>
+
+        <form>
+            <fieldset class="grupo">
+                <div class="campo">
+                <legend><b>Cadastro do ET</b></legend><br>
+                <label for="idNome">Nome:</label><input type="text" name="nNome" id="idNome" placeholder="Nome Completo" size="40">
+                <br><label for="idSenha">Senha:</label><input type="password" name="nSenha" id="idSenha">
+            </div><br><br>
+             <div class="campo">
+                <label for="email">Email</label><input type="email" name="email" id="email" size="40">
+            </div>
+            </fieldset>
+
+            <div class="campo">
+                <label for="idPlanetas">Quantos planetas há no Sistema Solar?:</label>
+                <input type="number" name="planetas" id="idPlanetas" min="0" max="100">
+            </div>
+
+            <div class="campo">
+                <label for="idData">Data:</label>
+                <input type="date" name="data" id="idData">
+            </div>
+
+            <div class="campo">
+                <label>Qual horário você prefere para admirar o céu?</label>
+                <label>
+                    <input type="radio" name="ceu" value="Manhã">Manhã
+                </label>
+                <label>
+                    <input type="radio" name="ceu" value="Tarde">Tarde
+                </label>
+                <label>
+                    <input type="radio" name="ceu" value="Noite">Noite
+                </label>
+            </div>
+            
+            <div class="campo">
+                <label for="planetas">Qual planeta te chama mais atenção?</label>
+                <select id="planetas">
+                    <option selected disabled value="">Qual deles...?</option>
+                    <option>Mercurio</option>
+                    <option>Venus</option>
+                    <option>Terra</option>
+                    <option>Marte</option>
+                    <option>Jupiter</option>
+                    <option>Saturno</option>
+                    <option>Urano</option>
+                    <option>Netuno</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                <div id="check">
+                    <legend><b>Para Finalizar</b></legend><br>
+                    <label>O que você utiliza para observar o céu?</label><br>
+                    <input type="checkbox" id="terra" name="terra" value="Telescopio Refrator">
+                    <label for="terra">Telescópio Refrator</label>
+                    <input type="checkbox" id="terra2" name="terra2" value="Luneta">
+                    <label for="terra2">Luneta</label>
+                    <input type="checkbox" id="terra3" name="terra3" value="Binoculo">
+                    <label for="terra3">Binóculo</label>
+                    <input type="checkbox" id="terra4" name="terra4" value="Olho Nu">
+                    <label for="terra4">Olho Nu</label>
+                    <input type="checkbox" id="terra5" name="terra5" value="Telescopio Refletor">
+                    <label for="terra5">Telescópio Refletor</label>
+                    <input type="checkbox" id="terra6" name="terra6" value="Radiotelescopio">
+                    <label for="terra6">Radiotelescópio</label>
+                    <input type="checkbox" id="terra7" name="terra7" value="Apps">
+                    <label for="terra7">Apps</label>
+                </div>
+            </fieldset>
+
+            <div class="campo">
+                <label>Qual seu nível de satisfação com nosso site?</label>
+                <input type="range" id="nota" min="1" max="10" value="1">
+            </div>
+
+            <div class="campo">
+                <br>
+                <label for="experiencia">Conte um pouco da sua experiência com a observação do sistema solar...</label>
+                <textarea row="6" style="width: 30em" id="experiencia" name="experiencia"></textarea>
+            </div>
+            <br>
+            <button class="botao" type="submit" onsubmit="">Feito</button>
+
+            </fieldset>
+        </form>
+        <br>
+        <picture>
+            <source media="(max-width: 750px)" srcset="galeria/faleconosco.pequeno.jpg">
+            <source media="(max-width: 1050px)" srcset="galeria/faleconosco.medio.jpg">
+            <img src="galeria/faleconosco.grande.jpg" alt="imagem do fale conosco através de qualquer rede social.">
+        </picture>
+
+        <a href="#">&#9650;</a>
+        </main>
+    </body>
+</html>
