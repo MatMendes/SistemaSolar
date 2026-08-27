@@ -1,74 +1,125 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head> 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="galeria/favicon.ico" type="image/x-icon">
-    <title>Pagina Inicial</title>
-    <link rel="stylesheet" href="css/style.css">
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Uma viagem pelo Sistema Solar: planetas, curiosidades e informações sobre nossa vizinhança cósmica.">
+  <link rel="shortcut icon" href="galeria/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Sistema Solar | Uma viagem pelo espaço</title>
 </head>
-    <body>       
-        <nav class="menu">
-            <ul>
-            <li><a href="index.html">Página Inicial</a></li>
-            <li><a href="galeria.html" rel="next">Os Planetas de Nosso Sistema</a>
-                <ul>
-                    <li><a href="mercurio.html">Mercúrio</a></li>
-                    <li><a href="venus.html">Vênus</a></li>
-                    <li><a href="terra.html">Terra</a></li>
-                    <li><a href="marte.html">Marte</a></li>
-                    <li><a href="jupiter.html">Júpiter</a></li>
-                    <li><a href="saturno.html">Saturno</a></li>
-                    <li><a href="urano.html">Urano</a></li>
-                    <li><a href="netuno.html">Netuno</a></li>
-                    <li><a href="planeta9.html">Planeta 9</a></li>
-                </ul>
-            </li>
-            <li><a href="solelua.html">Sol e Lua</a></li>
-            <li><a href="plutao.html">Plutão</a></li>
-            <li><a href="curiosidadesdosplanetas.html">Curiosidades dos Planetas</a></li>
-            <li><a href="fale_conosco.html">Fale Conosco</a></li>
-            </ul>
-        </nav>
-        <main>
-        <h1>SISTEMA SOLAR!</h1>
+<body>
+  <nav class="menu" aria-label="Navegação principal">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li>
+        <a href="galeria.html">Planetas ▾</a>
+        <ul>
+          <li><a href="mercurio.html">Mercúrio</a></li>
+          <li><a href="venus.html">Vênus</a></li>
+          <li><a href="terra.html">Terra</a></li>
+          <li><a href="marte.html">Marte</a></li>
+          <li><a href="jupiter.html">Júpiter</a></li>
+          <li><a href="saturno.html">Saturno</a></li>
+          <li><a href="urano.html">Urano</a></li>
+          <li><a href="netuno.html">Netuno</a></li>
+          <li><a href="planeta9.html">Planeta 9</a></li>
+        </ul>
+      </li>
+      <li><a href="solelua.html">Sol &amp; Lua</a></li>
+      <li><a href="plutao.html">Plutão</a></li>
+      <li><a href="curiosidadesdosplanetas.html">Curiosidades</a></li>
+      <li><a href="fale_conosco.html">Contato</a></li>
+    </ul>
+  </nav>
 
-        <h2 style="color:#f5f5f5">Que tal ouvir uma musiquinha enquanto navega por aqui?!!</h2>
-        <br><br><br><br><br>
-        <audio controls preload="metadata"loop>
-            <source src="midia/interstellar.mp3.mp3" type="audio/mpeg">
-            <source src="midia/interstellar.ogg (online-audio-converter.com).ogg" type="audio/ogg">
-            <source src="midia/interstellar.wav.wav" type="audio/wav">
-            <p>Erro...audio não compatível!</p> 
-        </audio>
-        <br><br>
-        <h2>Conhecendo um pouco nosso sistema solar...</h2>
-        
-        <p>O Sistema Solar é um conjunto de corpos celestes que gravitam na órbita de um sol (uma estrela). O nosso     sistema solar é formado por oito planetas: Mercúrio, Vênus, Terra, Marte, Júpiter, Saturno, Urano e Netuno.
-           Além deles, existem mais cinco planetas anões (Ceres, Plutão, Haumea, Makemake, Éris) e muitos outros astros, como satélites naturais, asteroides, meteoros, meteoroides e cometas.
-           O Sol e todo o nosso sistema solar faz parte de uma galáxia, que se chama Via-Láctea.
-        </p>
-        <p>Algumas teorias tentam explicar a origem do Sistema Solar sendo uma delas a hipótese nebular. Segundo ela, no início, as estrelas teriam sido nebulosas, ou seja, grandes nuvens de poeira e gás que se compactaram girando cada vez mais rápido devido a sua força gravitacional.
-            Sendo assim, há 4,5 bilhões de anos, sua porção central teria formado uma estrela, e a matéria exterior se contraiu por algum tipo de perturbação, dando origem aos planetas.</p>
-        <p>Características do Sistema Solar:
-            Inicialmente, é preciso saber que o Sol é uma estrela. Essa estrela possui 99,8% de toda a massa do sistema solar e, segundo a lei da gravitação universal de Newton, massa atrai massa.
-            Assim, o Sol atrai tudo o que existe a sua volta e aprisiona uma série de astros e corpos celestes em sua órbita, formando o que chamamos de sistema solar.
-            O meio interplanetário é o espaço existente entre os componentes do sistema solar constituído de poeira, que são partículas microscópicas no estado sólido, e gás, uma mistura de fluxo gasoso e partículas carregadas eletricamente.</p>
+  <main>
+    <section class="hero">
+      <span class="eyebrow">Explore o universo</span>
+      <h1>Sistema Solar</h1>
+      <p>Uma viagem pela nossa vizinhança cósmica. Conheça os planetas, descubra curiosidades e entenda um pouco melhor o lugar incrível onde vivemos.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="galeria.html">Explorar os planetas</a>
+        <a class="btn btn-secondary" href="#sobre">Começar a viagem ↓</a>
+      </div>
+      <div class="stats" aria-label="Informações rápidas">
+        <div class="stat"><strong>8</strong><span>planetas no Sistema Solar</span></div>
+        <div class="stat"><strong>4,5 bi</strong><span>anos de história aproximada</span></div>
+        <div class="stat"><strong>1</strong><span>estrela no centro: o Sol</span></div>
+      </div>
+    </section>
 
-            <h3>Para conhecer um pouquinho mais, veja o video abaixo.</h3>
+    <section id="sobre">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Nossa vizinhança</span>
+          <h2>Um pequeno ponto no universo</h2>
+        </div>
+      </div>
+      <p>O Sistema Solar é formado pelo Sol e por todos os corpos celestes que estão ligados à sua gravidade. Entre eles estão os oito planetas, planetas anões, luas, asteroides, cometas e outros objetos.</p>
+      <p>O Sol concentra a maior parte da massa do sistema e sua gravidade mantém os planetas em suas órbitas. Tudo isso está dentro da Via-Láctea, uma entre bilhões de galáxias do universo observável.</p>
+    </section>
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/3bE0NZVRwNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-       
-            <h3>Veja nosso sistema solar e seus planetas:</h3>
-        
-        <picture>
-            <source media="(max-width: 750px)" srcset="galeria/sistema.solar.pequeno.jpg">
-            <source media="(max-width: 1050px)" srcset="galeria/sistema.solar.medio.jpg">
-            <img src="galeria/sistema.solar.grande.jpg" alt="Sistema solar com todos os oito planetas.">
-        </picture>
-        
-        <a href="#">&#9650;</a>
-        </main>
-    </body>
+    <section>
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Escolha um destino</span>
+          <h2>Conheça os planetas</h2>
+        </div>
+      </div>
+      <div class="planet-grid">
+        <a class="planet-card" href="mercurio.html"><strong>Mercúrio</strong><span>O planeta mais próximo do Sol</span></a>
+        <a class="planet-card" href="venus.html"><strong>Vênus</strong><span>Um mundo coberto por nuvens</span></a>
+        <a class="planet-card" href="terra.html"><strong>Terra</strong><span>Nosso lar azul</span></a>
+        <a class="planet-card" href="marte.html"><strong>Marte</strong><span>O planeta vermelho</span></a>
+        <a class="planet-card" href="jupiter.html"><strong>Júpiter</strong><span>O gigante do Sistema Solar</span></a>
+        <a class="planet-card" href="saturno.html"><strong>Saturno</strong><span>Famoso por seus anéis</span></a>
+        <a class="planet-card" href="urano.html"><strong>Urano</strong><span>Um gigante de gelo diferente</span></a>
+        <a class="planet-card" href="netuno.html"><strong>Netuno</strong><span>O planeta mais distante</span></a>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Para ir além</span>
+          <h2>Curiosidade, exploração e descoberta</h2>
+        </div>
+      </div>
+      <p>Quer descobrir fatos interessantes sobre os planetas? Acesse nossa área de curiosidades. Também é possível conhecer Plutão, o Sol e a Lua e navegar pela galeria.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="curiosidadesdosplanetas.html">Ver curiosidades</a>
+        <a class="btn btn-secondary" href="galeria.html">Abrir galeria</a>
+        <a class="btn btn-secondary" href="solelua.html">Sol e Lua</a>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Uma pausa na viagem</span>
+          <h2>Coloque os fones e viaje</h2>
+        </div>
+      </div>
+      <p>O projeto original também tinha uma trilha sonora para acompanhar a navegação. Mantivemos a ideia, agora com uma apresentação mais limpa.</p>
+      <audio controls preload="metadata" loop>
+        <source src="midia/interstellar.mp3.mp3" type="audio/mpeg">
+        Seu navegador não consegue reproduzir este áudio.
+      </audio>
+    </section>
+
+    <section>
+      <h2>Veja o Sistema Solar</h2>
+      <picture>
+        <source media="(max-width: 750px)" srcset="galeria/sistema.solar.pequeno.jpg">
+        <source media="(max-width: 1050px)" srcset="galeria/sistema.solar.medio.jpg">
+        <img src="galeria/sistema.solar.grande.jpg" alt="Representação do Sistema Solar com os oito planetas.">
+      </picture>
+    </section>
+
+    <a href="#" aria-label="Voltar ao topo">↑ Voltar ao topo</a>
+  </main>
+
+  <footer>Projeto Sistema Solar · versão profissional em desenvolvimento</footer>
+</body>
 </html>
